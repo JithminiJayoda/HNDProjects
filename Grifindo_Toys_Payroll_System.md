@@ -1,6 +1,4 @@
-# HNDProjects
-
-The Grifindo Toys Payroll System:
+# The Grifindo Toys Payroll System:
 
 ❖ Click here to watch the Grifindo Toys Payroll System GUI Application
  Overview (Screen Recording)
