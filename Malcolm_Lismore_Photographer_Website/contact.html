@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire - Malcolm Lismore Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="scriptsheet" href="js/script.js">
+    <link rel="phpsheet" href="php/submit.php">
+
+    <style>
+        body {
+          background-image: url('gallery/images/hero.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=email] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        button {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        textarea {
+          width: 100%;
+          background-color: white;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          color: black;
+        }
+
+        input[type=date] {
+          width: 100%;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          color: black;
+        }
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery/gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Enquire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact" style="color:white; padding: 10px" >
+        <h1>Enquire</h1>
+        <div>
+            <form id="enquiry-form" action="php/submit.php" method="POST" onsubmit="return validateForm()">
+                <label for="name" style="color:black;">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email" style="color:black;">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="event-type" style="color:black;">Event Type:</label>
+                <select id="event-type" name="event-type">
+                    <option value="wedding">Wedding</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="event">Event</option>
+                </select>
+    
+                <label for="date" style="color:black;">Event Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="message" style="color:black;">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+    
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <footer style="bottom:0">
+            <p>&copy; 2024 Malcolm Lismore Photography. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
