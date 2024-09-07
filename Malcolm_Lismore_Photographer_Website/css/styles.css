@@ -1,0 +1,136 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+/* Hero Section */
+.hero {
+    background-image: URL("https://afranawfer.github.io/Malcolm_Lismore_Photographer_Website/gallery/images/hero.jpg"); /* Add your hero image here */
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.hero p{
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ff8533;
+}
+
+/* Overview Section */
+.overview {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile-first approach */
+body {
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    margin: 20px 0;
+}
+
+/* Media Query for tablets and larger devices */
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+
+    /* For pricing cards to sit side-by-side on larger screens */
+    .pricing-card {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        margin-right: 5%;
+    }
+
+    .pricing-card:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Media Query for desktops */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+}
